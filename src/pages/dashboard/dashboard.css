@@ -1,0 +1,29 @@
+.dashboard {
+	height: 100vh;
+	width: 100%;
+	background: #f9f9f9;
+}
+
+.main-layout {
+	width: 100%;
+	padding: 50px;
+	display: flex;
+	flex-direction: row;
+	gap: 30px;
+}
+
+.main-layout .left {
+	height: 500px;
+	width: 300px;
+	padding: 50px;
+	background: lightgray;
+	border-radius: 10px;
+}
+
+.main-layout .right {
+	height: 500px;
+	width: 70%;
+	padding: 50px;
+	background: lightgray;
+	border-radius: 10px;
+}
