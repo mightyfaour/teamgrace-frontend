@@ -1,29 +1,36 @@
 .dashboard {
-	height: 100vh;
+	height: 150vh;
 	width: 100%;
 	background: #f9f9f9;
 }
 
 .main-layout {
 	width: 100%;
-	padding: 50px;
+	height: 100vh;
+	padding: 50px 100px;
 	display: flex;
 	flex-direction: row;
 	gap: 30px;
 }
 
 .main-layout .left {
-	height: 500px;
+	height: 100vh;
 	width: 300px;
-	padding: 50px;
-	background: lightgray;
-	border-radius: 10px;
+	padding: 20px;
+	background: white;
+	border-radius: 5px;
+	-webkit-box-shadow: 6px 8px 28px -16px rgba(66, 68, 90, 1);
+	-moz-box-shadow: 6px 8px 28px -16px rgba(66, 68, 90, 1);
+	box-shadow: 6px 8px 28px -16px rgba(66, 68, 90, 1);
 }
 
 .main-layout .right {
-	height: 500px;
+	height: 100vh;
 	width: 70%;
-	padding: 50px;
-	background: lightgray;
-	border-radius: 10px;
+	padding: 20px;
+	background: white;
+	border-radius: 5px;
+	-webkit-box-shadow: 6px 8px 28px -16px rgba(66, 68, 90, 1);
+	-moz-box-shadow: 6px 8px 28px -16px rgba(66, 68, 90, 1);
+	box-shadow: 6px 8px 28px -16px rgba(66, 68, 90, 1);
 }

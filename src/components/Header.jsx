@@ -1,5 +1,8 @@
 import React from "react";
 import { AiOutlineBell } from "react-icons/ai";
+import { BiSearch } from "react-icons/bi";
+import profile from "../assets/profile.jpg";
+
 import "../components/reusables.css";
 
 const Header = () => {
@@ -15,16 +18,16 @@ const Header = () => {
 					type="text"
 					placeholder="Search for positions and global candidates"
 				/>
+				<BiSearch className="search_icon" />
 			</div>
 			<div className="links">
 				<a href="/">Dashboard</a>
 				<a href="/">Help & Support</a>
-				<a href="/">Help & Support</a>
 			</div>
 			<div className="profile">
-				<AiOutlineBell />
+				<AiOutlineBell className="bell_icon" />
 				<div>|</div>
-				{/* <img src="" alt="" /> */}
+				<img src={profile} alt="profile_image" />
 				<p>Simon Orumen</p>
 			</div>
 		</div>
