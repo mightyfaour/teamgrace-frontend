@@ -12,6 +12,12 @@ import RatingSet from "./pages/dashboard/pages/RatingSet";
 import SingleSign from "./pages/dashboard/pages/SingleSign";
 import Integration from "./pages/dashboard/pages/Integration";
 import "./index.css";
+import ApiKeys from "./pages/dashboard/pages/ApiKeys";
+import WebHooks from "./pages/dashboard/pages/WebHooks";
+import PlanUsage from "./pages/dashboard/pages/PlanUsage";
+import Billing from "./pages/dashboard/pages/Billing";
+import TeamMag from "./pages/dashboard/pages/TeamMag";
+import Upgrade from "./pages/dashboard/pages/Upgrade";
 
 function App() {
 	return (
@@ -52,7 +58,31 @@ function App() {
 							path="/dashboard/integration"
 							element={<Integration />}
 						/>
-					</Route>
+						<Route
+							path="/dashboard/apikeys"
+							element={<ApiKeys />}
+						/>
+						</Route>
+						<Route
+							path="/dashboard/webhooks"
+							element={<WebHooks />}
+						/>
+						<Route
+							path="/dashboard/planusage"
+							element={<PlanUsage />}
+						/>
+						<Route
+							path="/dashboard/billing"
+							element={<Billing />}
+						/>
+						<Route
+							path="/dashboard/teammag"
+							element={<TeamMag />}
+						/>
+						<Route
+							path="/dashboard/upgrade"
+							element={<Upgrade />}
+						/>
 					<Route path="/not-found" element={<Page404 />} />
 				</Routes>
 			</BrowserRouter>

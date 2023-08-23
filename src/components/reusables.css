@@ -93,3 +93,19 @@
 	font-weight: 600;
 	cursor: pointer;
 }
+.link{
+	/* color: #1AA34A; */
+}
+.link:hover {
+	color: #1AA34A;
+}
+.icon:hover{
+	fill: #1AA34A;
+}
+.side_link:focus-visible{
+	color: #1AA34A;
+}
+.
+/* .icon:hover{
+	fill: #1AA34A;
+} */

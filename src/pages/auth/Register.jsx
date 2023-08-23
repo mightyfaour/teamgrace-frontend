@@ -1,16 +1,36 @@
-import React from "react";
+import React, { useState } from "react";
 import { Link, useNavigate } from "react-router-dom";
 import "./auth.css";
 
 const Register = () => {
 	const navigate = useNavigate();
-
-	const handleSubmit = (e) => {
+	const [registerationError, setRegisterationError] = useState("");
+	
+	const handleSubmit = async (e) => {
 		e.preventDefault();
 
-		alert("Registration successful");
+		const formData = new FormData(e.target);
 
-		navigate("/signin");
+		try {
+			const response = await fetch('API key from the backend should be pasted here', {
+				method: 'POST',
+				body: formData,
+			});
+
+			if (response.ok) {
+				alert('Registration successful');
+				navigate('/signin');
+			} else {
+				const errorData = await response.json();
+				setRegistrationError(errorData.message);
+			}
+		} catch (error) {
+			console.error('Error registering:', error);
+			setRegistrationError('An error occurred while registering.');
+		}
+		// alert("Registration successful");
+
+		// navigate("/signin");
 	};
 
 	return (
