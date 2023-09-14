@@ -1,6 +1,7 @@
 import React from "react";
 import { Link, useNavigate } from "react-router-dom";
 import "./auth.css";
+import FrontPageHeader from "../../components/FrontPageHeader"
 
 const Login = () => {
 	const navigate = useNavigate();
@@ -14,7 +15,8 @@ const Login = () => {
 	};
 
 	return (
-		<>
+		<>	
+			<FrontPageHeader />
 			<form onSubmit={handleSubmit}>
 				<h1 className="logo">
 					Team<span>Grace</span>

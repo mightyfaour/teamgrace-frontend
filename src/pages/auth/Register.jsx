@@ -1,6 +1,9 @@
 import React, { useState } from "react";
 import { Link, useNavigate } from "react-router-dom";
 import "./auth.css";
+import Sidebar from "../../components/Sidebar";
+import FrontPageHeader from "../../components/FrontPageHeader"
+
 
 const Register = () => {
 	const navigate = useNavigate();
@@ -28,14 +31,19 @@ const Register = () => {
 			console.error('Error registering:', error);
 			setRegistrationError('An error occurred while registering.');
 		}
-		// alert("Registration successful");
-
-		// navigate("/signin");
+	
 	};
 
 	return (
 		<>
+			<FrontPageHeader />
+			<div className="left">
+				
+				<Sidebar />
+			</div>
+			<br/>
 			<form onSubmit={handleSubmit}>
+				
 				<h1 className="logo">
 					Team<span>Grace</span>
 				</h1>

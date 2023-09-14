@@ -75,3 +75,15 @@ form button {
 form a {
 	color: rgba(26, 163, 74, 1);
 }
+
+.left {
+	height: 100vh;
+	width: 300px;
+	padding: 20px;
+	background: white;
+	border-radius: 5px;
+	float: left;
+	-webkit-box-shadow: 6px 8px 28px -16px rgba(66, 68, 90, 1);
+	-moz-box-shadow: 6px 8px 28px -16px rgba(66, 68, 90, 1);
+	box-shadow: 6px 8px 28px -16px rgba(66, 68, 90, 1);
+}

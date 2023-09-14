@@ -12,7 +12,9 @@ const DashboardLayout = () => {
 				<div className="left">
 					<Sidebar />
 				</div>
-				<div className="right">{<Outlet />}</div>
+				<div className="right">{<Outlet />}
+				
+				</div>
 			</div>
 		</div>
 	);

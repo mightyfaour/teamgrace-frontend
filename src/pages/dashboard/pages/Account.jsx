@@ -43,12 +43,13 @@ const Account = () => {
 
 	return (
 		<div>
+			
 			<ValidatorForm onSubmit={handleSubmit} onError={(error)=> error } className="account-form">
 				<h2> Account</h2>
 				<div className="field-container">
 					<div className="input-container">
 						<label htmlFor="companyName">Company name</label>
-						<TextValidator type="text" placeholder="Team grace" value={formValues.companyName}
+						<TextValidator type="text" placeholder="bukunmi" value={formValues.companyName}
 							onChange={(e) => setFormValues({ ...formValues, companyName: e.target.value })}
 							validators={['required']}
 						errorMessages={["This Field is Required"]}/>
