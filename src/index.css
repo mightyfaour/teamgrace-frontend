@@ -1,14 +1,28 @@
 @import url("https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;700&family=Lato&family=Merriweather:wght@300;400&family=Montserrat:ital,wght@0,400;0,700;1,400&family=Poppins&family=Raleway&family=Roboto&family=Sacramento&display=swap");
 
 * {
-	margin: 0;
-	padding: 0;
-	box-sizing: border-box;
-	font-family: "Poppins";
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins";
 }
 
 .app {
-	background: #f9f9f9;
-	width: 100%;
-	height: 100vh;
+  background: #f9f9f9;
+  width: 100%;
+  height: 100vh;
+}
+.instructions {
+  font-size: 0.75rem;
+  border-radius: 0.5rem;
+  background: #000;
+  color: #fff;
+  padding: 0.25rem;
+  position: relative;
+  bottom: -10px;
+}
+
+.offscreen {
+  position: absolute;
+  left: -9999px;
 }
