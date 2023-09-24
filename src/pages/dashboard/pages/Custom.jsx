@@ -19,7 +19,7 @@ const Custom = () => {
           <p
             style={{
               fontSize: "1.5rem",
-              color: "green",
+              color: "rgba(26, 163, 74, 1)",
               cursor: "pointer",
             }}
           >
@@ -28,7 +28,7 @@ const Custom = () => {
           <p
             style={{
               fontSize: "1rem",
-              color: "green",
+              color: "rgba(26, 163, 74, 1)",
               fontWeight: "bold",
               textDecoration: "underline",
               cursor: "pointer",
