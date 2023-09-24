@@ -40,84 +40,20 @@ const Account = () => {
     fetchData();
   };
 
-<<<<<<< HEAD
-	return (
-		<div>
-			
-			<ValidatorForm onSubmit={handleSubmit} onError={(error)=> error } className="account-form">
-				<h2> Account</h2>
-				<div className="field-container">
-					<div className="input-container">
-						<label htmlFor="companyName">Company name</label>
-						<TextValidator type="text" placeholder="bukunmi" value={formValues.companyName}
-							onChange={(e) => setFormValues({ ...formValues, companyName: e.target.value })}
-							validators={['required']}
-						errorMessages={["This Field is Required"]}/>
-					</div>
-					<div className="input-container">
-						<label htmlFor="email">Email</label>
-						<TextValidator type="text" placeholder="teamgrace@gmail.com" value={formValues.email}
-							onChange={(e) => setFormValues({ ...formValues, email: e.target.value })}
-							validators={['required', 'isEmail']}
-						errorMessages={["This Field is Required", "The email is invalid"]}/>
-					</div>
-				</div>
-				<div className="field-container">
-					<div className="input-container">
-						<label htmlFor="name">Name</label>
-						<TextValidator type="text" placeholder="Dozie Solomon" value={formValues.name}
-							onChange={(e) => setFormValues({ ...formValues, name: e.target.value })}
-							validators={['required', 'maxStringLength:40']}
-						errorMessages={["This Field is Required", "Name must be less than 40"]} />
-					</div>
-					<div className="input-container">
-						<label htmlFor="PreferredLanguage">
-							Preferred Language
-						</label>
-						<select name="language" value={formValues.language}
-							onChange={(e) => setFormValues({ ...formValues, language: e.target.value })} id="language">
-							<option value="english">English</option>
-							<option value="french">French</option>
-							<option value="spanish">Spanish</option>
-						</select>
-						{/* <input type="text" placeholder="French" /> */}
-					</div>
-				</div>
-				<h2>Password & Security</h2>
-				<div className="field-container">
-					<div className="input-container">
-						<label htmlFor="password">Password</label>
-						<TextValidator type="password" placeholder="***************" value={formValues.password}
-							onChange={(e) => setFormValues({ ...formValues, password: e.target.value })}
-							validators={['required']}
-							errorMessages={["This Field is Required"]}/>
-					</div>
-					<div className="input-container">
-						<label htmlFor="password">Confirm Password</label>
-						<TextValidator type="password" placeholder="***************" value={formValues.confirmPassword}
-							onChange={(e) => setFormValues({ ...formValues, confirmPassword: e.target.value })}
-							validators={['required']}
-							errorMessages={["This Field is Required"]} />
-					</div>
-				</div>
-=======
   return (
-    <div className="account_container">
+    <div>
       <ValidatorForm
         onSubmit={handleSubmit}
         onError={(error) => error}
         className="account-form"
       >
-        <h2 style={{ color: "darkgreen" }}> Account</h2>
+        <h2> Account</h2>
         <div className="field-container">
           <div className="input-container">
-            <label htmlFor="companyName" className="labels">
-              Company name
-            </label>
+            <label htmlFor="companyName">Company name</label>
             <TextValidator
               type="text"
-              placeholder="Team grace"
-              style={{ width: "390px" }}
+              placeholder="bukunmi"
               value={formValues.companyName}
               onChange={(e) =>
                 setFormValues({ ...formValues, companyName: e.target.value })
@@ -127,14 +63,11 @@ const Account = () => {
             />
           </div>
           <div className="input-container">
-            <label htmlFor="email" className="labels">
-              Email
-            </label>
+            <label htmlFor="email">Email</label>
             <TextValidator
               type="text"
               placeholder="teamgrace@gmail.com"
               value={formValues.email}
-              style={{ width: "390px" }}
               onChange={(e) =>
                 setFormValues({ ...formValues, email: e.target.value })
               }
@@ -145,14 +78,11 @@ const Account = () => {
         </div>
         <div className="field-container">
           <div className="input-container">
-            <label htmlFor="name" className="labels">
-              Name
-            </label>
+            <label htmlFor="name">Name</label>
             <TextValidator
               type="text"
               placeholder="Dozie Solomon"
               value={formValues.name}
-              style={{ width: "390px" }}
               onChange={(e) =>
                 setFormValues({ ...formValues, name: e.target.value })
               }
@@ -164,9 +94,7 @@ const Account = () => {
             />
           </div>
           <div className="input-container">
-            <label htmlFor="PreferredLanguage" className="labels">
-              Preferred Language
-            </label>
+            <label htmlFor="PreferredLanguage">Preferred Language</label>
             <select
               name="language"
               value={formValues.language}
@@ -182,15 +110,12 @@ const Account = () => {
             {/* <input type="text" placeholder="French" /> */}
           </div>
         </div>
-        <h2 style={{ color: "darkgreen" }}>Password & Security</h2>
+        <h2>Password & Security</h2>
         <div className="field-container">
           <div className="input-container">
-            <label htmlFor="password" className="labels">
-              Password
-            </label>
+            <label htmlFor="password">Password</label>
             <TextValidator
               type="password"
-              style={{ width: "390px" }}
               placeholder="***************"
               value={formValues.password}
               onChange={(e) =>
@@ -201,12 +126,9 @@ const Account = () => {
             />
           </div>
           <div className="input-container">
-            <label htmlFor="password" className="labels">
-              Confirm Password
-            </label>
+            <label htmlFor="password">Confirm Password</label>
             <TextValidator
               type="password"
-              style={{ width: "390px" }}
               placeholder="***************"
               value={formValues.confirmPassword}
               onChange={(e) =>
@@ -220,7 +142,6 @@ const Account = () => {
             />
           </div>
         </div>
->>>>>>> origin/main
 
         <button type="submit">Save Changes</button>
       </ValidatorForm>
