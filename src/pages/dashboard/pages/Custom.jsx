@@ -1,5 +1,7 @@
 import React from "react";
 
+import "./Pages.css";
+
 const Custom = () => {
   return (
     <div className="custom">
