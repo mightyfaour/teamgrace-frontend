@@ -1,3 +1,88 @@
-.account-form {
-    body: 0;
+.account_container {
+  width: 100%;
+  height: 100%;
+  /* background-color: red; */
+}
+.privacy_container {
+  width: 100%;
+  height: 100%;
+}
+.setVideo {
+  margin-top: 2rem;
+  display: flex;
+  align-items: center;
+  position: relative;
+}
+.http {
+  padding: 0.5rem;
+  border-radius: 3px;
+  border: 1px solid #ccc;
+  width: 80px;
+  font-size: 1rem;
+  font-weight: 400;
+  border-right: none;
+}
+.input_privacy {
+  padding: 0.5rem;
+  position: absolute;
+  left: 4.6rem;
+  width: 400px;
+  border-left: none;
+  border: 1px solid #ccc;
+  padding-left: 0 10px;
+  font-size: 1rem;
+  border-right: none;
+  border-left-style: 0px solid #ccc;
+}
+.input_privacy:focus {
+  outline: none;
+}
+.set {
+  padding: 0.55rem;
+  width: 100px;
+  background-color: rgb(44, 146, 44);
+  color: white;
+  position: absolute;
+  left: 29.2rem;
+  font-size: 1rem;
+  border: none;
+  border-radius: 3px;
+  cursor: pointer;
+}
+.input_privacy::placeholder {
+  color: #ccc;
+  font-size: 12px;
+}
+.custom {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  margin-left: 1rem;
+}
+.custom_p {
+  color: #9d9898;
+}
+.custom-logo {
+  margin-top: 3rem;
+  display: flex;
+  align-items: center;
+  gap: 2rem;
+}
+.h {
+  width: 200px;
+  height: 200px;
+  background-color: rgb(24, 125, 214);
+  color: white;
+  font-size: 7rem;
+  display: flex;
+  align-items: center;
+  text-align: center;
+  justify-content: center;
+  border-radius: 2px;
+}
+.add_button {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
 }

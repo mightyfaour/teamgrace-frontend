@@ -41,19 +41,22 @@ const Account = () => {
   };
 
   return (
-    <div>
+    <div className="account_container">
       <ValidatorForm
         onSubmit={handleSubmit}
         onError={(error) => error}
         className="account-form"
       >
-        <h2> Account</h2>
+        <h2 style={{ color: "darkgreen" }}> Account</h2>
         <div className="field-container">
           <div className="input-container">
-            <label htmlFor="companyName">Company name</label>
+            <label htmlFor="companyName" className="labels">
+              Company name
+            </label>
             <TextValidator
               type="text"
               placeholder="Team grace"
+              style={{ width: "390px" }}
               value={formValues.companyName}
               onChange={(e) =>
                 setFormValues({ ...formValues, companyName: e.target.value })
@@ -63,11 +66,14 @@ const Account = () => {
             />
           </div>
           <div className="input-container">
-            <label htmlFor="email">Email</label>
+            <label htmlFor="email" className="labels">
+              Email
+            </label>
             <TextValidator
               type="text"
               placeholder="teamgrace@gmail.com"
               value={formValues.email}
+              style={{ width: "390px" }}
               onChange={(e) =>
                 setFormValues({ ...formValues, email: e.target.value })
               }
@@ -78,11 +84,14 @@ const Account = () => {
         </div>
         <div className="field-container">
           <div className="input-container">
-            <label htmlFor="name">Name</label>
+            <label htmlFor="name" className="labels">
+              Name
+            </label>
             <TextValidator
               type="text"
               placeholder="Dozie Solomon"
               value={formValues.name}
+              style={{ width: "390px" }}
               onChange={(e) =>
                 setFormValues({ ...formValues, name: e.target.value })
               }
@@ -94,7 +103,9 @@ const Account = () => {
             />
           </div>
           <div className="input-container">
-            <label htmlFor="PreferredLanguage">Preferred Language</label>
+            <label htmlFor="PreferredLanguage" className="labels">
+              Preferred Language
+            </label>
             <select
               name="language"
               value={formValues.language}
@@ -110,12 +121,15 @@ const Account = () => {
             {/* <input type="text" placeholder="French" /> */}
           </div>
         </div>
-        <h2>Password & Security</h2>
+        <h2 style={{ color: "darkgreen" }}>Password & Security</h2>
         <div className="field-container">
           <div className="input-container">
-            <label htmlFor="password">Password</label>
+            <label htmlFor="password" className="labels">
+              Password
+            </label>
             <TextValidator
               type="password"
+              style={{ width: "390px" }}
               placeholder="***************"
               value={formValues.password}
               onChange={(e) =>
@@ -126,9 +140,12 @@ const Account = () => {
             />
           </div>
           <div className="input-container">
-            <label htmlFor="password">Confirm Password</label>
+            <label htmlFor="password" className="labels">
+              Confirm Password
+            </label>
             <TextValidator
               type="password"
+              style={{ width: "390px" }}
               placeholder="***************"
               value={formValues.confirmPassword}
               onChange={(e) =>
