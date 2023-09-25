@@ -53,6 +53,7 @@ const Account = () => {
             <label htmlFor="companyName">Company name</label>
             <TextValidator
               type="text"
+              style={{ width: "380px" }}
               placeholder="bukunmi"
               value={formValues.companyName}
               onChange={(e) =>
@@ -66,6 +67,7 @@ const Account = () => {
             <label htmlFor="email">Email</label>
             <TextValidator
               type="text"
+              style={{ width: "380px" }}
               placeholder="teamgrace@gmail.com"
               value={formValues.email}
               onChange={(e) =>
@@ -82,6 +84,7 @@ const Account = () => {
             <TextValidator
               type="text"
               placeholder="Dozie Solomon"
+              style={{ width: "380px" }}
               value={formValues.name}
               onChange={(e) =>
                 setFormValues({ ...formValues, name: e.target.value })
@@ -116,6 +119,7 @@ const Account = () => {
             <label htmlFor="password">Password</label>
             <TextValidator
               type="password"
+              style={{ width: "380px" }}
               placeholder="***************"
               value={formValues.password}
               onChange={(e) =>
@@ -129,6 +133,7 @@ const Account = () => {
             <label htmlFor="password">Confirm Password</label>
             <TextValidator
               type="password"
+              style={{ width: "380px" }}
               placeholder="***************"
               value={formValues.confirmPassword}
               onChange={(e) =>
